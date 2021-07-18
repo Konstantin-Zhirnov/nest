@@ -13,7 +13,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           registry: ghcr.io
-            name: ghcr.io/Konstantin-Zhirnov/nest/nest
-            username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_PASSWORD }}
-            tags: "develop"
+          name: ghcr.io/Konstantin-Zhirnov/nest/nest
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: "develop"
