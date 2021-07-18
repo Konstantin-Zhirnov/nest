@@ -2,7 +2,7 @@ name: Publish Docker
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
@@ -12,8 +12,8 @@ jobs:
       - name: Publish to registy
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          registry: docker.pkg.github.com
-          name: ТУТ ВАШ РЕПОЗИТОРИЙ
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: "develop"
+          registry: ghcr.io
+            name: ghcr.io/Konstantin-Zhirnov/nest/nest
+            username: ${{ secrets.DOCKER_USERNAME }}
+            password: ${{ secrets.DOCKER_PASSWORD }}
+            tags: "develop"
