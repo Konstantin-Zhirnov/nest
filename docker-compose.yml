@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nest-api:
+    image: next-api:latest
+    container_name: next-api
+    restart: always
+    ports:
+      - 3000:3000
+    volumes:
+      - ./.env:/opt/app/.env
